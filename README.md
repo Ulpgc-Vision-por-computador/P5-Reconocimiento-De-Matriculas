@@ -25,6 +25,6 @@
         license_text = read_license_plate_easyocr(license_plate_crop)
         cv2.putText(img, license_text, [x1 -10, y1 -10], cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 255), 3)
   ```
-  - Para un video siendo procesado a tiempo real se recorre frame por frame y se trata como en el apartado anterior.
-  - Para un video el cual primero es procesado primero y luego se muestra el video entero es necesario tener una lista `processed_frame` donde guardar los frames para luego mostrarlos.
+- Para un video siendo procesado a tiempo real se recorre frame por frame y se trata como en el apartado anterior.
+- Para un video el cual primero es procesado primero y luego se muestra el video entero es necesario tener una lista `processed_frame` donde guardar los frames para luego mostrarlos.
     
