@@ -25,9 +25,15 @@
         license_text = read_license_plate_easyocr(license_plate_crop)
         cv2.putText(img, license_text, [x1 -10, y1 -10], cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 255), 3)
   ```
-- Para un video siendo procesado a tiempo real se recorre frame por frame y se trata como en el apartado anterior.
-- Para un video el cual primero es procesado primero y luego se muestra el video entero es necesario tener una lista `processed_frame` donde guardar los frames para luego mostrarlos.
+- Se recorren los boxes obtenidos(las matrículas) y se obtienen las coordenadas del box obtenido `x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)`
+- Se recorta la imagen de la matrícula y leemos sus caracteres utilizando easyocr
+- Finalmente se dibuja el texto de la matrícula en la imagen original
 
+  
+- Para un video siendo procesado a tiempo real se recorre frame por frame y se trata como en el apartado anterior.
+
+- 
+- Para un video el cual primero es procesado primero y luego se muestra el video entero es necesario tener una lista `processed_frame` donde guardar los frames para luego mostrarlos.
 
 
 
@@ -39,6 +45,6 @@ Para conseguir los datasets utilizados y como ayuda para la realización de la p
 
 - [roboflow](https://universe.roboflow.com/)
 - [ultralytics](https://docs.ultralytics.com/modes/track/)
-- 
+  
 
     
