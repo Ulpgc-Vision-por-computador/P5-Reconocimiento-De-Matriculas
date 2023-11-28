@@ -27,4 +27,18 @@
   ```
 - Para un video siendo procesado a tiempo real se recorre frame por frame y se trata como en el apartado anterior.
 - Para un video el cual primero es procesado primero y luego se muestra el video entero es necesario tener una lista `processed_frame` donde guardar los frames para luego mostrarlos.
+
+
+
+
+
+
+###Fuentes de Información
+
+Para conseguir los datasets utilizados y como ayuda para la realización de la práctica hemos accedido a las siguientes fuentes de información
+
+- [roboflow](https://universe.roboflow.com/)
+- [ultralytics](https://docs.ultralytics.com/modes/track/)
+- 
+
     
